@@ -25,3 +25,25 @@ INSERT INTO ventas (id_venta, fecha, id_cliente) VALUES
 
 -- detalle venta
 INSERT INTO detalle_venta (id_detalle, id_venta, id_producto, cantidad, precio) VALUES
+('1', '1', 'P1001', 2, 15000.00),
+('2', '1', 'P1002', 1, 25000.00),
+('3', '2', 'P1003', 3, 30000.00),
+('4', '3', 'P1004', 1, 20000.00),
+('5', '4', 'P1005', 2, 18000.00),
+('6', '5', 'P1006', 1, 22000.00),
+('7', '6', 'P1007', 4, 12000.00),
+('8', '7', 'P1008', 2, 16000.00),
+('9', '8', 'P1009', 3, 14000.00),
+('10', '9', 'P1010', 1, 17000.00);
+
+-- productos
+INSERT INTO productos (id_producto, nombre, categoria, precio, stock, id_proveedor) VALUES
+('1', 'Portatil Asus', 'tecnologia', 1500000, TRUE, 'PR001'),
+('2', 'Smartphone Samsung', 'tecnologia', 2500000, 30, 'PR002'),
+('3', 'Tablet Apple', 'tecnologia', 3000000, 20, 'PR003'),
+('4', 'Monitor LG', 'tecnologia', 2000000, 15, 'PR004'),
+('5', 'Teclado Logitech', 'accesorios', 180000, 100, 'PR005'),
+('6', 'Mouse Inalambrico HP', 'accesorios', 220000, 80, 'PR006'),
+('7', 'Disco Duro Externo Seagate', 'almacenamiento', 1200000, 40, 'PR007'),
+('8', 'Impresora Epson', 'perifericos', 1600000, 25, 'PR008'),
+('9', 'Cámara Canon DSLR', 'fotografia', 1400000, 10, 'PR009');
